@@ -4,7 +4,10 @@ import React from "react";
 import styles from "./About.module.css";
 import Image from "next/image";
 import Profile from "../../../../public/profile.png";
+import { useRouter } from "next/navigation";
+
 const About = () => {
+  const router = useRouter();
   return (
     <div className={styles.about}>
       <figure>
@@ -71,7 +74,9 @@ const About = () => {
           Estoy emocionada por la oportunidad de trabajar juntos y contribuir al
           éxito de tu empresa.
         </p>
-        <button type="button">Enviar Mensaje</button>
+        <button type="button" onClick={() => router.push("/#contactMe")}>
+          Enviar Mensaje
+        </button>
       </article>
     </div>
   );

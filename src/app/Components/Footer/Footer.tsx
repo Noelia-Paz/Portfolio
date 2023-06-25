@@ -2,8 +2,10 @@
 
 import React, { useState } from "react";
 import styles from "./Footer.module.css";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <footer className={styles.footer}>
       <div>
@@ -33,7 +35,9 @@ const Footer = () => {
             asi podemos avanzar.
           </p>
         </article>
-        <button type="button">Enviar Mensaje</button>
+        <button type="button" onClick={() => router.push("/#contactMe")}>
+          Enviar Mensaje
+        </button>
       </div>
     </footer>
   );
