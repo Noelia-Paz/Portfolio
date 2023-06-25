@@ -199,9 +199,11 @@ const Work = () => {
                     <h5>{project.subTitle2}</h5>
                     <p>
                       {project.description}
-                      {project.features.map((feature, index) => {
-                        return <li key={index}>{feature}</li>;
-                      })}
+                      <ul>
+                        {project.features.map((feature, index) => {
+                          return <li key={index}>{feature}</li>;
+                        })}
+                      </ul>
                     </p>
                     <br />
                     <br />
