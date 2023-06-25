@@ -1,0 +1,44 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav button:nth-of-type(2),
+  .about article button,
+  .footer div button {
+    color: white;
+    height: 3.5rem;
+    font-size: 1rem;
+    padding: 0 2.9rem;
+    border-radius: 9999px;
+    letter-spacing: 0.03rem;
+    background-color: black;
+  }
+  
+  .nav button:nth-of-type(2):hover {
+    background-color: #755cde;
+  }
+
+
+
+
+@media screen and (max-width: 700px) {
+  .tablet {
+    display: none !important;
+  }
+  .nav button:nth-of-type(1) {
+    width: 48px;
+  }
+  .nav button:nth-of-type(2){
+    height: 2.8rem;
+    font-size: 0.9rem;
+    padding: 0 1.8rem;
+  }
+}

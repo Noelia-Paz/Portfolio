@@ -1,0 +1,104 @@
+.footer div {
+    display: flex;
+    min-width: 1110px;
+    margin-top: 5.5rem;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5.2rem 4.07rem;
+    background-color: black;
+    justify-content: space-between;
+  }
+  
+  .footer div article {
+    color: white;
+  }
+  
+  .footer div article p {
+    color: white;
+    margin-top: 1.5rem;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .footer div article h2 {
+    font-size: 2.35rem;
+    letter-spacing: 0.08rem;
+  }
+  
+  .footer div button {
+    margin-right: 1.9rem;
+  }
+  
+  .footer nav {
+    margin-top: 3.5rem;
+  }
+
+  .footer div button {
+    color: white;
+    height: 3.5rem;
+    font-size: 1rem;
+    padding: 0 2.9rem;
+    border-radius: 9999px;
+    letter-spacing: 0.03rem;
+    background-color: #eb7565;
+  }
+
+  .footer div button:hover {
+    background-color: #755cde;
+  }
+
+
+
+@media screen and (min-width: 1100px) {
+  .mobile,
+  .tablet {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  .desktop,
+  .mobile {
+    display: none !important;
+  }
+  .footer div {
+    display: block;
+    min-width: 693px;
+    text-align: center;
+    margin-top: 7.5rem;
+    padding: 3.5rem 4.07rem;
+  }
+  .footer div button {
+    margin: 2rem auto 0 auto;
+  }
+  .footer div article h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .desktop,
+  .tablet {
+    display: none !important;
+  }
+  .footer div article h2 {
+    font-size: 1.52rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .footer div {
+    min-width: 334px;
+    margin-top: 6rem;
+    padding: 3rem 1rem;
+    flex-direction: column;
+  }
+  .footer div article p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  .footer div button{
+margin-top: 15px;
+  }
+}
