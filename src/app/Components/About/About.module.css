@@ -39,6 +39,7 @@
   
   .about article button {
     background-color: #eb7565;
+    font-weight: 700;
   }
   
   .about article button:hover{

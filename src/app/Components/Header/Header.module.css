@@ -20,6 +20,7 @@
     border-radius: 9999px;
     letter-spacing: 0.03rem;
     background-color: black;
+    font-weight: 700;
   }
   
   .nav button:nth-of-type(2):hover {

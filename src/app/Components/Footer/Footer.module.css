@@ -41,6 +41,7 @@
     border-radius: 9999px;
     letter-spacing: 0.03rem;
     background-color: #eb7565;
+    font-weight: 700;
   }
 
   .footer div button:hover {

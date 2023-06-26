@@ -84,6 +84,7 @@ const Work = () => {
         "Scrum",
       ],
       href: "https://pf-soyhenry.vercel.app",
+      repo: "https://github.com/iHoerth/PF-soyhenry",
     },
     {
       image: ONG,
@@ -117,7 +118,8 @@ const Work = () => {
         "Metodologías Agiles",
         "Scrum",
       ],
-      href: "https://pf-soyhenry.vercel.app",
+      href: "#",
+      repo: "https://github.com/alkemyTech/OT222-client",
     },
     {
       image: Pokemon,
@@ -148,6 +150,7 @@ const Work = () => {
         "Insomnia",
       ],
       href: "https://pokemon-e41u.vercel.app",
+      repo: "https://github.com/Noelia-Paz/Pokemon",
     },
   ];
 
@@ -175,17 +178,31 @@ const Work = () => {
                   />
                   <br />
                   <br />
-                  <motion.a
-                    href={project.href}
-                    id="link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    draggable="false"
-                    style={{ cursor: "pointer", pointerEvents: "auto" }}
-                    className={styles.link}
-                  >
-                    Ver Proyecto
-                  </motion.a>
+
+                  <motion.div className={styles["botones"]}>
+                    <motion.a
+                      href={project.href}
+                      id="link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      draggable="false"
+                      style={{ cursor: "pointer", pointerEvents: "auto" }}
+                      className={styles.link}
+                    >
+                      Ver Proyecto
+                    </motion.a>
+                    <motion.a
+                      href={project.repo}
+                      id="link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      draggable="false"
+                      style={{ cursor: "pointer", pointerEvents: "auto" }}
+                      className={styles.link}
+                    >
+                      Ver Repositorio
+                    </motion.a>
+                  </motion.div>
 
                   <article
                     className={styles.article}
@@ -273,20 +290,35 @@ const Work = () => {
                     alt="img"
                     width={530}
                     height={340}
+                    className={styles.img}
                   />
                   <br />
                   <br />
-                  <motion.a
-                    href={project.href}
-                    id="link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    draggable="false"
-                    style={{ cursor: "pointer", pointerEvents: "auto" }}
-                    className={styles.link}
-                  >
-                    Ver Proyecto
-                  </motion.a>
+
+                  <motion.div className={styles["botones"]}>
+                    <motion.a
+                      href={project.href}
+                      id="link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      draggable="false"
+                      style={{ cursor: "pointer", pointerEvents: "auto" }}
+                      className={styles.link}
+                    >
+                      Ver Proyecto
+                    </motion.a>
+                    <motion.a
+                      href={project.repo}
+                      id="link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      draggable="false"
+                      style={{ cursor: "pointer", pointerEvents: "auto" }}
+                      className={styles.link}
+                    >
+                      Ver Repositorio
+                    </motion.a>
+                  </motion.div>
 
                   <article
                     className={styles.article}
@@ -300,11 +332,14 @@ const Work = () => {
                     <h5>{project.subTitle2}</h5>
                     <p>
                       {project.description}
-                      {project.features.map((feature, index) => {
-                        return <li key={index}>{feature}</li>;
-                      })}
+                      <ul>
+                        {project.features.map((feature, index) => {
+                          return <li key={index}>{feature}</li>;
+                        })}
+                      </ul>
                     </p>
-
+                    <br />
+                    <br />
                     <h5>{project.subTitle3}</h5>
                     <p>
                       <ul className={styles.ul}>
@@ -373,17 +408,31 @@ const Work = () => {
                   />
                   <br />
                   <br />
-                  <motion.a
-                    href={project.href}
-                    id="link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    draggable="false"
-                    style={{ cursor: "pointer", pointerEvents: "auto" }}
-                    className={styles.link}
-                  >
-                    Ver Proyecto
-                  </motion.a>
+
+                  <motion.div className={styles["botones"]}>
+                    <motion.a
+                      href={project.href}
+                      id="link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      draggable="false"
+                      style={{ cursor: "pointer", pointerEvents: "auto" }}
+                      className={styles.link}
+                    >
+                      Ver Proyecto
+                    </motion.a>
+                    <motion.a
+                      href={project.repo}
+                      id="link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      draggable="false"
+                      style={{ cursor: "pointer", pointerEvents: "auto" }}
+                      className={styles.link}
+                    >
+                      Ver Repositorio
+                    </motion.a>
+                  </motion.div>
 
                   <article
                     className={styles.article}
@@ -397,11 +446,14 @@ const Work = () => {
                     <h5>{project.subTitle2}</h5>
                     <p>
                       {project.description}
-                      {project.features.map((feature, index) => {
-                        return <li key={index}>{feature}</li>;
-                      })}
+                      <ul>
+                        {project.features.map((feature, index) => {
+                          return <li key={index}>{feature}</li>;
+                        })}
+                      </ul>
                     </p>
-
+                    <br />
+                    <br />
                     <h5>{project.subTitle3}</h5>
                     <p>
                       <ul className={styles.ul}>
